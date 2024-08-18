@@ -11,18 +11,16 @@
 <body>
   <div id="app">
     <a href="/" class="logo">Logo</a>
-    <form onclick="createDecodedText()">
+    <form>
       <textarea id="user-text" name="user-text" rows="5" cols="33" placeholder="Enter your text here"
         required></textarea>
       <p>Only lowercase letters and no accents.</p>
       <div class="buttons">
         <button type="submit">Encrypt</button>
-        <button type="button" disabled>Decrypt</button>
       </div>
     </form>
 
     <main>
-      <h1>Encrypted Texts</h1>
       <section>
         <h2>No text added.</h2>
         <p>Enter a text that you want to encrypt or decrypt.</p>
@@ -158,11 +156,9 @@
           <path d="M173.89 67.1029C180.033 63.1817 186.315 59.4814 192.734 56.002C193.205 55.7534 192.79 55.0355 192.319 55.284C185.899 58.7358 179.618 62.4361 173.475 66.385C173.032 66.6887 173.447 67.4067 173.89 67.1029Z" fill="black"/>
           <path d="M174.582 74.3379C179.646 70.6376 184.765 67.0753 189.995 63.5959C190.438 63.2921 190.022 62.5742 189.58 62.8779C184.378 66.3573 179.231 69.9472 174.167 73.6199C173.724 73.9237 174.139 74.6417 174.582 74.3379Z" fill="black"/>
           </svg>
-        <button type="button" disabled>Copy</button>  
       </section>
     </main>
   </div>
-
 </body>
 
 </html>
