@@ -7,15 +7,12 @@
 
 ## Index of Contents
 
-* [Title and Cover Image](#title-and-cover-image)
 * [Project Description](#project-description)
-* [Project Status](#project-status)
 * [Features and Application Demo](#features-and-application-demo)
 * [Project Access](#project-access)
 * [Technologies Used](#technologies-used)
-* [Contributors](#contributors)
-* [Project Developers](#project-developers)
-* 
+* [Author](#author)
+
 ## Project Description
 
 **Text Decoder** is a responsive website designed to create and register decoded texts. This project was developed as part of a challenge in the course [ONE (Oracle Next Education)](https://www.oracle.com/br/education/oracle-next-education/) in partnership with [Alura](https://www.alura.com.br/). Using technologies like JavaScript, HTML, and CSS, Text Decoder offers a simple and intuitive interface to efficiently decode texts.
@@ -38,7 +35,7 @@ Text Decoder will be accessible through a dedicated page created using GitHub Pa
 - HTML
 - CSS
 
-## Contributors
+## Author
 
 This project was developed by:
 
