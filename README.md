@@ -39,7 +39,7 @@ Text Decoder will be accessible through a dedicated page created using GitHub Pa
 
 This project was developed by:
 
-| [<img loading="lazy" src="https://github.com/user-attachments/assets/6931b788-0531-46aa-bc12-edfb1c76481c" width=115><br><sub>Jefferson Santana</sub>](https://github.com/jeffsantanaa) |
+| [<img loading="lazy" src="https://github.com/user-attachments/assets/6931b788-0531-46aa-bc12-edfb1c76481c" width=115><br><sub>Jefferson Santana</sub>](https://github.com/jefsantanaa) |
 | :---: | 
 
 #### Let's connect!
