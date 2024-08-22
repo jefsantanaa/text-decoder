@@ -15,15 +15,17 @@
       <textarea id="user-text" name="user-text" rows="5" cols="33" placeholder="Enter your text here"
         required></textarea>
       <p>Only lowercase letters and no accents.</p>
-      <div class="buttons">
-        <button type="submit">Encrypt</button>
+      <div class="button">
+        <button type="submit" onclick="createDecodedText()">Encrypt</button>
       </div>
     </form>
 
     <main>
-      <section>
-        <h2>No text added.</h2>
-        <p>Enter a text that you want to encrypt or decrypt.</p>
+      <section id="text-section">
+        <div id="div-section">
+          <h2>No text added.</h2>
+          <p>Enter a text that you want to encrypt or decrypt.</p>
+        </div>
         <svg width="336" height="305" viewBox="0 0 336 305" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.613149 249.662C3.5463 248.226 4.7915 244.415 7.97369 243.421C11.2389 242.399 14.8638 244.415 17.8523 242.206C19.1528 241.239 20.1213 239.638 21.6986 239.058C23.0822 238.561 24.5211 239.113 25.8493 239.527C26.9838 239.886 28.1183 240.217 29.2528 240.576C33.8186 241.985 38.3567 243.365 42.9224 244.774C48.0969 246.348 53.2438 247.949 58.4183 249.524C58.9164 249.689 59.1377 248.888 58.6396 248.723C49.1761 245.823 39.7402 242.924 30.2767 240.024C28.063 239.361 25.7663 238.34 23.4696 238.064C21.8646 237.87 20.5918 238.505 19.4572 239.555C17.88 241.018 16.6901 242.371 14.3934 242.482C12.4841 242.592 10.6024 242.095 8.69313 242.399C4.76382 243.007 3.54629 247.287 0.225749 248.916C-0.272332 249.192 0.142738 249.91 0.613149 249.662Z" fill="#E8E8E8"/>
           <path d="M50.3383 246.182C52.3029 246.679 53.8525 244.719 55.6235 244.139C58.0032 243.338 60.549 243.669 62.7073 244.912C63.1777 245.188 63.5928 244.47 63.1224 244.194C61.2961 243.117 59.2207 242.675 57.1177 242.951C56.2046 243.062 55.3468 243.31 54.5166 243.669C53.3268 244.194 51.9432 245.713 50.5597 245.381C50.0339 245.243 49.8125 246.044 50.3383 246.182Z" fill="#E8E8E8"/>
@@ -159,6 +161,7 @@
       </section>
     </main>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
