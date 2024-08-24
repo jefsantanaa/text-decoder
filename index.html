@@ -23,62 +23,55 @@
         </a>
       </div>
     </div>
-    <main>
-      <form>
-        <textarea id="user-text" name="user-text" rows="5" cols="33" placeholder="Enter your text here" required>
+    <form>
+      <textarea id="user-text" name="user-text" rows="5" cols="33" placeholder="Enter your text here" required>
         </textarea>
-        <div id="paragraph-alert">
-          <p>
-            <i class="ph ph-warning-circle"></i>
-            Only lowercase letters and no accents.
-          </p>
-        </div>
-        <div id="form-buttons">
-          <button id="encrypt" type="submit" onclick="createDecodedText()">Encrypt</button>
-          <button id="decrypt">Decrypt</button>
-        </div>
-      </form>
+      <div id="paragraph-alert">
+        <p>
+          <i class="ph ph-warning-circle"></i>
+          Only lowercase letters and no accents.
+        </p>
+      </div>
+      <div id="form-buttons">
+        <button id="encrypt" type="submit" onclick="createDecodedText()">Encrypt</button>
+        <button id="decrypt">Decrypt</button>
+      </div>
+    </form>
 
-      <section id="decoded-text-section">
-        <h1>Encrypted Texts</h1>
-        <div id="no-content-alert">
-          <h2>No text added.</h2>
-          <h3>Enter a text that you want to encrypt or decrypt.</h3>
-          <div id="no-alert-image">
-            <img src="./assets/no_texts_added.png" alt="Non-text alert image added">
-          </div>
+    <section id="decoded-text-section">
+      <h1>Encrypted Texts</h1>
+      <div id="no-content-alert">
+        <h2>No text added.</h2>
+        <h3>Enter a text that you want to encrypt or decrypt.</h3>
+        <div id="no-alert-image">
+          <img src="./assets/no_texts_added.png" alt="Non-text alert image added">
         </div>
-        <div id="decoded-texts">
-          <p class="decoded-texts-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit
-            et diam risus scelerisque vitae
-            est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-            sodales duis fames id diam feugiat aliquet non egestas. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Orci montes, sit et diam risus scelerisque vitae
-            est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-            sodales duis fames id diam feugiat aliquet non egestas.
-          </p>
-          <p class="decoded-texts-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit
-            et diam risus scelerisque vitae
-            est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-            sodales duis fames id diam feugiat aliquet non egestas. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Orci montes, sit et diam risus scelerisque vitae
-            est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-            sodales duis fames id diam feugiat aliquet non egestas.
-          </p>
-          <p class="decoded-texts-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit
-            et diam risus scelerisque vitae
-            est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-            sodales duis fames id diam feugiat aliquet non egestas. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Orci montes, sit et diam risus scelerisque vitae
-            est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-            sodales duis fames id diam feugiat aliquet non egestas.
-          </p>
-        </div>
-        <div id="copy-button">
-          <button id="copy">Copy</button>
-        </div>
-      </section>
-    </main>
+      </div>
+      <div id="decoded-texts">
+        <p class="decoded-texts-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit
+          et diam risus scelerisque vitae
+          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
+          sodales duis fames id diam feugiat aliquet non egestas. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Orci montes, sit et diam risus scelerisque vitae
+          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
+          sodales duis fames id diam feugiat aliquet non egestas.
+        </p>
+        <p class="decoded-texts-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit
+          et diam risus scelerisque vitae
+          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
+          sodales duis fames id diam feugiat aliquet non egestas. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Orci montes, sit et diam risus scelerisque vitae
+          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
+          sodales duis fames id diam feugiat aliquet non egestas.
+        </p>
+        <p class="decoded-texts-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit
+          et diam risus scelerisque vitae
+          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
+          sodales duis fames id diam feugiat aliquet non egestas.
+        </p>
+      </div>
+      <button id="copy">Copy</button>
+    </section>
   </div>
   <script src="script.js"></script>
 </body>
