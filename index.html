@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,13 +9,13 @@
     rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Decoder</title>
+  <title>Decodificador de Texto</title>
   <link rel="stylesheet" href="./styles/style.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
-  <div id="app">
+  <div id="container">
     <div id="top">
       <div id="logo">
         <a href="index.html">
@@ -24,53 +24,31 @@
       </div>
     </div>
     <form>
-      <textarea id="user-text" name="user-text" rows="5" cols="33" placeholder="Enter your text here" required>
-        </textarea>
+      <textarea id="input-text" placeholder="Digite o texto aqui..." required></textarea>
       <div id="paragraph-alert">
         <p>
           <i class="ph ph-warning-circle"></i>
-          Only lowercase letters and no accents.
+          Somente letras minúsculas e sem acentos.
         </p>
       </div>
       <div id="form-buttons">
-        <button id="encrypt" type="submit" onclick="createDecodedText()">Encrypt</button>
-        <button id="decrypt">Decrypt</button>
+        <button type="button" id="encode-button">Decodificar</button>
+        <button type="button" id="decode-button" disabled>Descodificar</button>
       </div>
     </form>
 
     <section id="decoded-text-section">
-      <h1>Encrypted Texts</h1>
+      <h1></h1>
       <div id="no-content-alert">
-        <h2>No text added.</h2>
-        <h3>Enter a text that you want to encrypt or decrypt.</h3>
+        <h2>Nenhum texto adicionado.</h2>
+        <h3>Insira um texto que você deseja criptografar ou descriptografar.</h3>
         <div id="no-alert-image">
           <img src="./assets/no_texts_added.png" alt="Non-text alert image added">
         </div>
       </div>
       <div id="decoded-texts">
-        <p class="decoded-texts-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit
-          et diam risus scelerisque vitae
-          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-          sodales duis fames id diam feugiat aliquet non egestas. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Orci montes, sit et diam risus scelerisque vitae
-          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-          sodales duis fames id diam feugiat aliquet non egestas.
-        </p>
-        <p class="decoded-texts-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit
-          et diam risus scelerisque vitae
-          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-          sodales duis fames id diam feugiat aliquet non egestas. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Orci montes, sit et diam risus scelerisque vitae
-          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-          sodales duis fames id diam feugiat aliquet non egestas.
-        </p>
-        <p class="decoded-texts-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit
-          et diam risus scelerisque vitae
-          est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero,
-          sodales duis fames id diam feugiat aliquet non egestas.
-        </p>
       </div>
-      <button id="copy">Copy</button>
+      <button type="button" id="copy-button" disabled>Copiar</button>
     </section>
   </div>
   <script src="script.js"></script>

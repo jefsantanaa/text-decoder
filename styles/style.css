@@ -21,9 +21,9 @@ body {
   background-color: var(--background-color);
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
-} 
+}
 
-#app {
+#container {
   width: 100%;
   height:100%;
   padding: 4.0rem 4.0rem;
@@ -42,7 +42,7 @@ form {
   gap: 1.2rem;
 }
 
-#user-text {
+#input-text {
   width: 100%;
   height: 5.6rem;
   background-color: var(--paragraph-color);
@@ -65,7 +65,7 @@ form {
   gap: 1.2rem;
 }
 
-#encrypt {
+#encode-button {
   height: 4.2rem;
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -78,7 +78,7 @@ form {
   cursor: pointer;
 }
 
-#decrypt {
+#decode-button {
   height: 4.2rem;
   background-color: var(--tertiary-color);
   color: var(--primary-color);
@@ -91,8 +91,16 @@ form {
   cursor: pointer;
 }
 
+#decode-button:disabled {
+  background-color: var(--alert-color);
+}
+
+#copy-button:disabled {
+  background-color: var(--alert-color);
+}
+
 #decoded-text-section {
-  width: 100%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -136,17 +144,19 @@ h3 {
   width: 100%;
   padding: 2.4rem 0rem 2.4rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 1.2rem;
 }
 
-.decoded-texts-paragraphs {
+#decoded-texts p {
   width: 100%;
   padding: 2.8rem 1.6rem 2.8rem;
   font-weight: 400;
   background-color: var(--paragraph-color);
   color: var(--secondary-color);
   border-radius: 1.2rem;
+  cursor: pointer;
   box-shadow:
     0px 8px 8px rgba(0, 0, 0, 0.1),
     0px 4px 4px rgba(0, 0, 0, 0.1),
@@ -156,7 +166,12 @@ h3 {
     inset 0px 1px 0px rgba(255, 255, 255, 0.03);
 }
 
-#copy {
+#decoded-texts p.selected {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#copy-button {
   width: 28rem;
   height: 4.2rem;
   padding: 1.5rem 1.2rem 1.5rem;
@@ -171,12 +186,21 @@ h3 {
   cursor: pointer;
 }
 
+#copy-button:disabled {
+  background-color: var(--alert-color);
+  cursor: not-allowed;
+}
+
 @media (max-width: 1200px) {
-  #app {
+  #container {
     flex-direction: column;
   }
 
-  #copy {
+  #copy-button {
+    width: 100%;
+  }
+
+  #decoded-text-section {
     width: 100%;
   }
 }
