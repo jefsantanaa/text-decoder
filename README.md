@@ -27,7 +27,7 @@
 
 ## Project Access
 
-Text Decoder will be accessible through a dedicated page created using GitHub Pages.
+Text Decoder is accessible through a dedicated page created using [GitHub Pages](https://jefsantanaa.github.io/text-decoder/).
 
 ## Technologies Used
 
